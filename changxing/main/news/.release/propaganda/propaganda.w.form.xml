@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cIB7fmu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIB7fmu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cIB7fmu" class="cIB7fmu"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="top:13px;left:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="cIB7fmu" class="cIB7fmu">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cIB7fmu" __cid="cIB7fmu"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cIB7fmu" style="display:none;" __cid="cIB7fmu">
+      <xhtml:div class="x-dialog-title cIB7fmu" __cid="cIB7fmu">
+        <xhtml:button class="close cIB7fmu" __cid="cIB7fmu">
+          <xhtml:span __cid="cIB7fmu" class="cIB7fmu">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cIB7fmu" __cid="cIB7fmu"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cIB7fmu" __cid="cIB7fmu"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc6reE3y-iosstatusbar cIB7fmu" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIB7fmu"> 
+    <div class="x-panel-top cIB7fmu" xid="top" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIB7fmu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cIB7fmu" xid="title" style="background:#e04e46;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;科普宣传&quot;}" __cid="cIB7fmu"> 
+        <div class="x-titlebar-left cIB7fmu" __cid="cIB7fmu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cIB7fmu" xid="backBtn" bind-click="backBtnClick" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cIB7fmu"> 
+            <i class="icon-chevron-left cIB7fmu" __cid="cIB7fmu"/>  
+            <span __cid="cIB7fmu" class="cIB7fmu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cIB7fmu" __cid="cIB7fmu">科普宣传</div>  
+        <div class="x-titlebar-right  cIB7fmu" __cid="cIB7fmu">
+          <div class="empty cIB7fmu" __cid="cIB7fmu"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cIB7fmu" xid="content" _xid="C79269497AD000011AEC826110801095" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIB7fmu"> 
+      <div class="x-scroll cIB7fmu" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:scrollView2PullDown;onPullUp:scrollView2PullUp" data-config="{&quot;autoAppend&quot;:true,&quot;autoPullUp&quot;:true}" __cid="cIB7fmu"> 
+        <div class="x-content-center x-pull-down container cIB7fmu" xid="div5" __cid="cIB7fmu"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cIB7fmu" xid="i2" __cid="cIB7fmu"/>  
+          <span class="x-pull-down-label cIB7fmu" xid="span3" __cid="cIB7fmu">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cIB7fmu" xid="div6" __cid="cIB7fmu"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pcIjmURb-iosstatusbar cIB7fmu" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIB7fmu"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cIB7fmu" xid="list" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;listData&quot;}" __cid="cIB7fmu"> 
+              <ul class="x-list-template hide cIB7fmu" xid="listTemplateUl" bind-foreach="{data:$model.foreach_list($element),afterRender:$model.foreach_afterRender_list.bind($model,$element)}" __cid="cIB7fmu"> 
+                <li xid="li" style="border-bottom: 1px solid #f4f4f4;" bind-click="liClick" __cid="cIB7fmu" class="cIB7fmu"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cIB7fmu" xid="newRow" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIB7fmu"> 
+                    <div class="col-xs-12 cIB7fmu" xid="col6" __cid="cIB7fmu"> 
+                      <div style="line-height:3" xid="div34" __cid="cIB7fmu" class="cIB7fmu"> 
+                        <span xid="span1" style="display:block;float:left;background:#eee;border-radius:10px;height:10px;width:10px;margin-top:15px;" __cid="cIB7fmu" class="cIB7fmu"/>
+                        <span xid="news1" bind-text="val(&quot;title&quot;)" style="float:left;color:grey;margin-left:15px;" __cid="cIB7fmu" class="cIB7fmu"/> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div>
+            <style __cid="cIB7fmu" class="cIB7fmu">.x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIjmURb-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up cIB7fmu" xid="div7" __cid="cIB7fmu"> 
+          <span class="x-pull-up-label cIB7fmu" xid="span4" __cid="cIB7fmu">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cIB7fmu" class="cIB7fmu">.x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6reE3y-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

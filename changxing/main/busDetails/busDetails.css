@@ -1,0 +1,12 @@
+.myMenu{
+	position:absolute;
+	top:0px;
+	right:10px;
+	z-index: 666;
+}
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}

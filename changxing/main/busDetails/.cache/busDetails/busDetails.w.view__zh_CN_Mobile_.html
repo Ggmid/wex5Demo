@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/changxing/main/base/tpl/header.w" __id="id_1" design="device:m;" class="window window cEb2AFf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEb2AFf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="">.myMenu.cEb2AFf{position: absolute; top: 0px; right: 10px; z-index: 666} .hide.cEb2AFf{display: none} .show.cEb2AFf{display: block} .red.cEb2AFf{background: red} .blue.cEb2AFf{background: rgb(47, 164, 231)} .myMenu.cEb2AFf{position: absolute; top: 0px; right: 10px; z-index: 666} .hide.cEb2AFf{display: none} .show.cEb2AFf{display: block}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cEb2AFf" class="cEb2AFf"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7VVfMz-iosstatusbar cEb2AFf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEb2AFf"> 
+    <div class="x-panel-top cEb2AFf" xid="top1" style="background:#e04e46;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEb2AFf"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cEb2AFf" xid="title" style="background:#e04e46;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'},css:$model.color.get()?&quot;red&quot;:&quot;blue&quot;" __cid="cEb2AFf"> 
+        <div class="x-titlebar-left cEb2AFf" __cid="cEb2AFf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cEb2AFf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'backBtnClick')}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cEb2AFf"> 
+            <i class="icon-chevron-left cEb2AFf" __cid="cEb2AFf"/>  
+            <span __cid="cEb2AFf" class="cEb2AFf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cEb2AFf" __cid="cEb2AFf"/>  
+        <div class="x-titlebar-right  cEb2AFf" __cid="cEb2AFf"> 
+          <div class="empty cEb2AFf" __cid="cEb2AFf"/> 
+        </div>  
+        <div class="myMenu cEb2AFf" xid="div11_10" xui:parent="title" xui:update-mode="insert" __cid="cEb2AFf"> 
+          <a class="btn btn-default btn-only-icon cEb2AFf" component="$model/UI2/system/components/justep/button/button" style="font-size: 32px;color:#FFFFFF;padding: 0;background:#2fa4e7;border:none;" xid="button11_10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button11Click')}" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cEb2AFf"> 
+            <i xid="i11_10" __cid="cEb2AFf" class="cEb2AFf"/>  
+            <span xid="span11_10" __cid="cEb2AFf" class="cEb2AFf">列表</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cEb2AFf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEb2AFf"> 
+      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cEb2AFf" xid="windowContainer1" xui:update-mode="merge" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/changxing/main/busDetails/busDetailsMap.w&quot;}" __cid="cEb2AFf"> 
+        <div component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/changxing/main/base/map/map.w" __id="id_1" design="device:m;" class="window window cUFF3yu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUFF3yu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,"> 
+          <style>.show.cUFF3yu{display: block} .hide.cUFF3yu{display: hide} .maplibTfctr.cUFF3yu{display: none !important} .anchorTL.cUFF3yu{bottom: 95px !important; top: auto !important} .loading.cUFF3yu{font-size: 40px; color: rgb(117, 115, 115)} .anchorBR.cUFF3yu{bottom: auto; right: 20px !important; top: 80px !important} .anchorTR.cUFF3yu{bottom: auto; right: 20px !important; top: 60px !important; width: 30px !important; height: 30px !important; background: url(http://api0.map.bdimg.com/images/st-control.png) -9px -2px no-repeat !important; border: 1px solid rgb(175, 175, 175)} .anchorTR.cUFF3yu &gt; span.cUFF3yu{display: none !important} .scroll.cUFF3yu{top: 50%; width: 100%; transition-duration: 0ms} .detailPan.cUFF3yu{position: absolute; bottom: 0; z-index: 999; background: white; height: 100px; width: 100%} .hide.cUFF3yu{display: none} .show.cUFF3yu{display: block}</style>  
+          <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cUFF3yu" class="cUFF3yu"></div>  
+          <div xid="baiduMap" style="height:100%;width:100%;position: absolute;" __cid="cUFF3yu" class="cUFF3yu"></div>  
+          <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="cUFF3yu" class="cUFF3yu">  
+            <div class="x-dialog-overlay cUFF3yu" __cid="cUFF3yu"/>  
+            <div class="x-dialog cUFF3yu" style="display:none;" __cid="cUFF3yu"> 
+              <div class="x-dialog-title cUFF3yu" __cid="cUFF3yu"> 
+                <button class="close cUFF3yu" __cid="cUFF3yu"> 
+                  <span __cid="cUFF3yu" class="cUFF3yu">×</span> 
+                </button>  
+                <div class="x-dialog-title-text cUFF3yu" __cid="cUFF3yu"/> 
+              </div>  
+              <div class="x-dialog-body cUFF3yu" __cid="cUFF3yu"/> 
+            </div> 
+          </span>  
+          <div class="detailPan cUFF3yu" dir="ltr" style="width:100%;z-index:1300;overflow:hidden;" xid="infoDetails" xui:parent="window" xui:update-mode="insert" __cid="cUFF3yu">  
+            <div class="x-list cUFF3yu" component="$model/UI2/system/components/justep/list/list" xid="list51_5" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;busData&quot;}" __cid="cUFF3yu"> 
+              <ul class="x-list-template hide cUFF3yu" xid="listTemplateUl21_5" __cid="cUFF3yu" data-bind="foreach:{data:$model.foreach_list51_5($element),afterRender:$model.foreach_afterRender_list51_5.bind($model,$element)}"> 
+                <li class="col-xs-12 cUFF3yu" style="padding:0;border-bottom:1px solid #eee;" xid="li2" __cid="cUFF3yu" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+                  <div class="x-row cUFF3yu" component="$model/UI2/system/components/justep/row/row" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUFF3yu"> 
+                    <div style="line-height:3;padding-left:30px;" xid="div10" __cid="cUFF3yu" class="cUFF3yu"> 
+                      <div xid="div12" __cid="cUFF3yu" class="cUFF3yu"> 
+                        <span xid="span10" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;start&quot;)"/>  
+                        <span xid="span4" __cid="cUFF3yu" class="cUFF3yu">----</span>  
+                        <span xid="span11" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;end&quot;)"/> 
+                      </div>  
+                      <div xid="div13" __cid="cUFF3yu" class="cUFF3yu"> 
+                        <span style="color:#fff;background:#47e197;padding:2px;border-radius:6px;" xid="span5" __cid="cUFF3yu" class="cUFF3yu">首</span>  
+                        <span xid="span12" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;startTime&quot;)"/>  
+                        <span style="color:#fff;background:#fd7d44;padding:2px;border-radius:6px;    margin-left: 15px;" xid="span15" __cid="cUFF3yu" class="cUFF3yu">末</span>  
+                        <span xid="span13" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;endTime&quot;)"/>  
+                        <span style="margin-left: 15px;" xid="span16" __cid="cUFF3yu" class="cUFF3yu">票价:</span>  
+                        <span xid="span14" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;cost&quot;)"/> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div> 
+          </div>  
+          <div class="hide cUFF3yu" style="background:#fff;position:absolute;z-index:1400;height:100%;width:100%;" xid="div3_9" xui:parent="window" xui:update-mode="insert" __cid="cUFF3yu" data-bind="css:$model.showList.get()?&quot;show&quot;:&quot;hide&quot;">  
+            <div style="height:120px;" xid="list6" __cid="cUFF3yu" class="cUFF3yu"> 
+              <div class="x-list cUFF3yu" component="$model/UI2/system/components/justep/list/list" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;listData&quot;}" __cid="cUFF3yu"> 
+                <ul class="x-list-template hide cUFF3yu" xid="listTemplateUl1" __cid="cUFF3yu" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li class="col-xs-12 cUFF3yu" style="padding:0;border-bottom:1px solid #eee;" xid="li11_1" __cid="cUFF3yu" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+                    <div class="x-row cUFF3yu" component="$model/UI2/system/components/justep/row/row" xid="row11_1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUFF3yu"> 
+                      <div style="line-height:2;padding-left:30px;" xid="col11_1" __cid="cUFF3yu" class="cUFF3yu"> 
+                        <div xid="div11" __cid="cUFF3yu" class="cUFF3yu"> 
+                          <span style="font-weight:900;font-size:16px;" xid="span8" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;line&quot;)"/>  
+                          <span style="border: 1px solid orange;padding: 5px 15px;    border-radius: 10px;color: orange;margin-left:20px;" xid="span9" __cid="cUFF3yu" class="cUFF3yu">实时公交</span> 
+                        </div>  
+                        <div xid="div41_1" __cid="cUFF3yu" class="cUFF3yu"> 
+                          <span xid="span71_1" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;start&quot;)"/>  
+                          <span xid="span12_1" __cid="cUFF3yu" class="cUFF3yu">----</span>  
+                          <span xid="span91_1" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;end&quot;)"/> 
+                        </div>  
+                        <div xid="div51_1" __cid="cUFF3yu" class="cUFF3yu"> 
+                          <span style="color:#fff;background:#47e197;padding:2px;border-radius:6px;" xid="span21_1" __cid="cUFF3yu" class="cUFF3yu">首</span>  
+                          <span xid="span81_1" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;startTime&quot;)"/>  
+                          <span style="color:#fff;background:#fd7d44;padding:2px;border-radius:6px;    margin-left: 15px;" xid="span61_1" __cid="cUFF3yu" class="cUFF3yu">末</span>  
+                          <span xid="span41_1" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;endTime&quot;)"/>  
+                          <span style="margin-left: 15px;" xid="span51_1" __cid="cUFF3yu" class="cUFF3yu">票价:</span>  
+                          <span xid="span31_1" __cid="cUFF3yu" class="cUFF3yu" data-bind="text:val(&quot;cost&quot;)"/> 
+                        </div>  
+                        <div xid="div71_1" __cid="cUFF3yu" class="cUFF3yu"> 
+                          <span xid="span13_1" __cid="cUFF3yu" class="cUFF3yu">发车间隔:</span>  
+                          <span xid="span101_1" __cid="cUFF3yu" class="cUFF3yu">约20分钟/趟</span> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div style="height:20px;background:#eee;" xid="div8_1" __cid="cUFF3yu" class="cUFF3yu"/>  
+            <div xid="busLine" __cid="cUFF3yu" class="cUFF3yu"/> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div xid="div11" xui:parent="panel1" xui:update-mode="insert" class="myMenu hide cEb2AFf" __cid="cEb2AFf" data-bind="css:$model.showMenuIcon.get()?&quot;show&quot;:&quot;hide&quot;;"> 
+      <a class="btn btn-default cEb2AFf" component="$model/UI2/system/components/justep/button/button" style="font-size: 18px;color:#FFFFFF;padding: 0;background:#2fa4e7;border:none;background:transparent;margin-top:12px;" xid="button11" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button11Click')}" data-config="{&quot;label&quot;:&quot;列表&quot;}" __cid="cEb2AFf"> 
+        <i xid="i11" __cid="cEb2AFf" class="cEb2AFf"/>  
+        <span xid="span11" xui:update-mode="merge-and-replace" __cid="cEb2AFf" class="cEb2AFf">列表</span> 
+      </a> 
+    </div>  
+    <style __cid="cEb2AFf" class="cEb2AFf">.x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7VVfMz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

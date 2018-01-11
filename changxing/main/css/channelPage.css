@@ -1,0 +1,14 @@
+.departmentItem{
+	 border-bottom: 1px solid #D5D5D6;
+}
+.atoItem{
+	background: #fff;
+}
+.item{
+	padding-left:10px;
+    text-align: left;
+    line-height: 60px;
+}
+.left{
+	width: 12rem;
+}

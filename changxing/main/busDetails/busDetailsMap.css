@@ -1,0 +1,14 @@
+.detailPan {
+	position:absolute;
+	bottom:0;
+	z-index:999;
+	background:white;
+	height:100px;
+	width:100%;
+}
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}

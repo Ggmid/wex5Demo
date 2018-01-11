@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQbaUje" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQbaUje" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cQbaUje" class="cQbaUje"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRnAzae-iosstatusbar cQbaUje" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQbaUje"> 
+    <div class="x-panel-top cQbaUje" xid="top1" style="background:#e04e46;padding:0;overflow:hidden;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:100}" __cid="cQbaUje"> 
+      <div xid="div1" style="font-size:24px;color:#FFF;" __cid="cQbaUje" class="cQbaUje"> 
+        <a class="btn btn-only-icon cQbaUje" component="$model/UI2/system/components/justep/button/button" xid="backBtn" style="color:#fff;font-size:24px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'backBtnClick')}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cQbaUje"> 
+          <i class="icon-chevron-left cQbaUje" xid="i1" __cid="cQbaUje"/>  
+          <span xid="span1" __cid="cQbaUje" class="cQbaUje"/> 
+        </a>  
+        <span xid="span2" style="margin-left: 16%;" __cid="cQbaUje" class="cQbaUje"/>  
+        <img src="@justepContextPath@/v_ec03f93a7dfc4d7493f7bdba9e87daa2l_zh_CNs_d_m/changxing/main/images/goes.png" alt="" xid="image4" __cid="cQbaUje" class="cQbaUje"/>  
+        <span xid="span3" __cid="cQbaUje" class="cQbaUje"/> 
+      </div>  
+      <div xid="div2" style="overflow:hidden;" __cid="cQbaUje" class="cQbaUje"> 
+        <div xid="pre" style="float:left;    font-size: 20px;color:#fff;" __cid="cQbaUje" class="cQbaUje" data-bind="event:{click:$model._callModelFn.bind($model, 'preClick')}"> 
+          <img src="@justepContextPath@/v_9803d615eb964e67bf31f5d37feacbc0l_zh_CNs_d_m/changxing/main/images/left.png" alt="" xid="image1" style="width:25px;" __cid="cQbaUje" class="cQbaUje"/>  
+          <span xid="span6" __cid="cQbaUje" class="cQbaUje">前一天</span> 
+        </div>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control cQbaUje" xid="input1" style="width:36%;float:left;margin-left:4%;background-color: #fff;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Date&quot;,&quot;format&quot;:&quot;yyyy-MM-dd&quot;}" __cid="cQbaUje"/>  
+        <div xid="aft" style="float:right; font-size: 20px;color:#fff;" __cid="cQbaUje" class="cQbaUje" data-bind="event:{click:$model._callModelFn.bind($model, 'aftClick')}"> 
+          <span xid="span7" __cid="cQbaUje" class="cQbaUje">后一天</span>  
+          <img src="@justepContextPath@/v_1bac0c9f5c7f446a80891bc118d15d77l_zh_CNs_d_m/changxing/main/images/right.png" alt="" xid="image2" style="width:25px;" __cid="cQbaUje" class="cQbaUje"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQbaUje" xid="content1" style="overflow:hidden;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQbaUje"> 
+      <div xid="list6" __cid="cQbaUje" class="cQbaUje"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list cQbaUje" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;listData&quot;}" __cid="cQbaUje"> 
+          <ul class="x-list-template hide cQbaUje" xid="listTemplateUl1" __cid="cQbaUje" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <li xid="li2" class="col-xs-12 cQbaUje" style="padding:0;border-bottom:1px solid #eee;" __cid="cQbaUje" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cQbaUje" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQbaUje"> 
+                <div xid="div10" style="line-height:2;padding-left:30px;width:100%;padding-bottom: 20px;" __cid="cQbaUje" class="cQbaUje"> 
+                  <div xid="div11" __cid="cQbaUje" class="cQbaUje"> 
+                    <span xid="span8" style="font-weight:900;font-size:18px;" __cid="cQbaUje" class="cQbaUje" data-bind="text:val(&quot;num&quot;)"/>  
+                    <span xid="span12" style="margin-left:16%;font-size:16px;" __cid="cQbaUje" class="cQbaUje" data-bind="text:val(&quot;start&quot;)+&quot;发车&quot;"/>  
+                    <span xid="span17" style="float:right;padding-right:30px;color:orange;margin-top:3px;" __cid="cQbaUje" class="cQbaUje" data-bind="text:&quot;￥&quot;+val(&quot;cost&quot;)"/> 
+                  </div>  
+                  <div xid="div12" __cid="cQbaUje" class="cQbaUje"> 
+                    <span xid="span10" style="color:#fff;background:orange;padding:2px;border-radius:6px;" __cid="cQbaUje" class="cQbaUje">起</span>  
+                    <span xid="span10" style="margin-left:14px;font-size:16px;" __cid="cQbaUje" class="cQbaUje" data-bind="text:val(&quot;startPosition&quot;)"/>  
+                    <div xid="div5" style="float:right;    padding-right: 30px;" __cid="cQbaUje" class="cQbaUje"> 
+                      <span xid="span11" __cid="cQbaUje" class="cQbaUje">余票:</span>  
+                      <span xid="span18" __cid="cQbaUje" class="cQbaUje" data-bind="text:val(&quot;leave&quot;)"/> 
+                    </div> 
+                  </div>  
+                  <div xid="div13" __cid="cQbaUje" class="cQbaUje"> 
+                    <span xid="span11" style="color:#fff;background:#47e197;padding:2px;border-radius:6px;" __cid="cQbaUje" class="cQbaUje">终</span>  
+                    <span xid="span12" style="margin-left:14px;font-size:16px;" __cid="cQbaUje" class="cQbaUje" data-bind="text:val(&quot;endPosition&quot;)"/>  
+                    <span xid="span15" style="float:right;margin-right:20px;" __cid="cQbaUje" class="cQbaUje">大型高一（50座）</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cQbaUje" class="cQbaUje">.x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-top {height: 100px;}.x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-content { top: 100px;bottom: nullpx;}.x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-top {height: 120px;}.iosstatusbar .x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-content { top: 120px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-top {height: 100px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRnAzae-iosstatusbar &gt;.x-panel-content {top: 100px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="passenger" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cQbaUje" class="cQbaUje"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cQbaUje" __cid="cQbaUje"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cQbaUje" style="display:none;" __cid="cQbaUje">  
+      <div class="x-dialog-title cQbaUje" __cid="cQbaUje"> 
+        <button class="close cQbaUje" __cid="cQbaUje"> 
+          <span __cid="cQbaUje" class="cQbaUje">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cQbaUje" __cid="cQbaUje"/> 
+      </div>  
+      <div class="x-dialog-body cQbaUje" __cid="cQbaUje"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cQbaUje" xid="popOver1" style="z-index:9999;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;dismissible&quot;:false}" __cid="cQbaUje"> 
+    <div class="x-popOver-overlay cQbaUje" xid="div9" __cid="cQbaUje"/>  
+    <div class="x-popOver-content cQbaUje" xid="div8" __cid="cQbaUje"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon loading cQbaUje" xid="button1" style="color:grey;font-size:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cQbaUje"> 
+        <i xid="i4" class="icon-loading-a cQbaUje" __cid="cQbaUje"/>  
+        <span xid="span4" __cid="cQbaUje" class="cQbaUje"/> 
+      </a> 
+    </div> 
+  </div> 
+</div>

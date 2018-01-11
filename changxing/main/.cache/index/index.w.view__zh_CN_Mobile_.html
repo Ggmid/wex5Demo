@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c7jymMb" component="$model/UI2/system/components/justep/window/window" design="device:m;" style="width: 100%; height: 100%;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7jymMb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/messageDialog/messageDialog,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.hide.c7jymMb{display: none}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstruct:modelModelConstruct;onParamsReceive:modelParamsReceive" __cid="c7jymMb" class="c7jymMb"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="top:76px;left:27px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:windowDialogClose" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="c7jymMb" class="c7jymMb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7jymMb" __cid="c7jymMb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7jymMb" style="display:none;" __cid="c7jymMb">  
+      <div class="x-dialog-title c7jymMb" __cid="c7jymMb"> 
+        <button class="close c7jymMb" __cid="c7jymMb"> 
+          <span __cid="c7jymMb" class="c7jymMb">×</span> 
+        </button>  
+        <div class="x-dialog-title-text c7jymMb" __cid="c7jymMb"/> 
+      </div>  
+      <div class="x-dialog-body c7jymMb" __cid="c7jymMb"/> 
+    </div> 
+  </span>  
+  <div xmlns="" class="x-scroll-content c7jymMb" xid="content" __cid="c7jymMb"> 
+    <div class="list-group c7jymMb" xid="listGroup" __cid="c7jymMb"> 
+      <div xid="index1" style="width:100%;background-image: url(@justepContextPath@/v_92bebb2612134993b1e83fbae7c0d4b3l_zh_CNs_d_m/changxing/main/images/vbanner.png);background-position:center;background-size:cover;padding:10px 0px 20px 0px;height:150px;" align="center" __cid="c7jymMb" class="c7jymMb"> 
+        <div xid="div10" style="position:absolute;left:20px;top:120px;display:none;" __cid="c7jymMb" class="c7jymMb"> 
+          <img src="@justepContextPath@/v_fcb2fdbf94b3488da2c07589c5a31bbal_zh_CNs_d_m/changxing/main/images/personal.png" alt="" xid="image1" style="width:20px;vertical-align:bottom;" __cid="c7jymMb" class="c7jymMb"/>  
+          <span xid="span3" style="color:white;margin-left:5px;" __cid="c7jymMb" class="c7jymMb">测试用户</span> 
+        </div> 
+      </div>  
+      <div xid="list3" __cid="c7jymMb" class="c7jymMb"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7jymMb" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7jymMb"> 
+          <div class="x-col c7jymMb" xid="col4" style="text-align:center;" __cid="c7jymMb"> 
+            <div xid="div29" __cid="c7jymMb" class="c7jymMb"> 
+              <img src="@justepContextPath@/v_1a306adff4084c8d806d4115aefffe07l_zh_CNs_d_m/changxing/main/images/bus.png" alt="" xid="bus" align="middle" dir="ltr" style="width:60px;height:60px;" __cid="c7jymMb" class="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'busClick')}"/> 
+            </div>  
+            <div style="line-height:2" xid="div30" __cid="c7jymMb" class="c7jymMb">公交查询</div> 
+          </div>  
+          <div class="x-col c7jymMb" xid="col2" style="text-align:center;" __cid="c7jymMb"> 
+            <div xid="div27" __cid="c7jymMb" class="c7jymMb"> 
+              <img src="@justepContextPath@/v_0eab2d76ab7845c0a387fef661dd8455l_zh_CNs_d_m/changxing/main/images/carBuy.png" alt="" xid="car" align="middle" dir="ltr" style="width:60px;height:60px;" __cid="c7jymMb" class="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'buyClick')}"/> 
+            </div>  
+            <div style="line-height:2" xid="div28" __cid="c7jymMb" class="c7jymMb">汽车购票</div> 
+          </div>  
+          <div class="x-col c7jymMb" xid="col3" style="text-align:center;" __cid="c7jymMb"> 
+            <div xid="div25" __cid="c7jymMb" class="c7jymMb"> 
+              <img src="@justepContextPath@/v_92fad179f3ee402b8379fb52d30e38e3l_zh_CNs_d_m/changxing/main/images/gas.png" alt="" xid="gas" align="middle" dir="ltr" style="width:60px;height:60px;" __cid="c7jymMb" class="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'gasClick')}"/> 
+            </div>  
+            <div style="line-height:2" xid="div26" __cid="c7jymMb" class="c7jymMb">加油站</div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7jymMb" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7jymMb"> 
+          <div class="x-col c7jymMb" xid="col9" style="text-align:center;" __cid="c7jymMb"> 
+            <div xid="div5" __cid="c7jymMb" class="c7jymMb"> 
+              <img src="@justepContextPath@/v_f83d26a76e2d403b829847cebbed2c53l_zh_CNs_d_m/changxing/main/images/driver.png" alt="" xid="driver" align="middle" dir="ltr" style="width:60px;height:60px;" __cid="c7jymMb" class="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'driverClick')}"/> 
+            </div>  
+            <div style="line-height:2" xid="div6" __cid="c7jymMb" class="c7jymMb">驾校</div> 
+          </div>  
+          <div class="x-col c7jymMb" xid="col15" style="text-align:center;" __cid="c7jymMb"> 
+            <div xid="div1" __cid="c7jymMb" class="c7jymMb"> 
+              <img src="@justepContextPath@/v_e4a9a5a049094f52bc9e3017523f9f04l_zh_CNs_d_m/changxing/main/images/fixed.png" alt="" xid="fixed" align="middle" dir="ltr" style="width:60px;height:60px;" __cid="c7jymMb" class="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'fixedClick')}"/> 
+            </div>  
+            <div style="line-height:2" xid="div2" __cid="c7jymMb" class="c7jymMb">修理厂</div> 
+          </div>  
+          <div id="heat" class="x-col c7jymMb" xid="col13" style="text-align:center;" __cid="c7jymMb"> 
+            <div xid="div3" __cid="c7jymMb" class="c7jymMb"> 
+              <img src="@justepContextPath@/v_e069846d91284997973889fee38ebc29l_zh_CNs_d_m/changxing/main/images/build.png" alt="" xid="build" align="middle" dir="ltr" style="width:60px;height:60px;" __cid="c7jymMb" class="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'buildClick')}"/> 
+            </div>  
+            <div style="line-height:2" xid="div4" __cid="c7jymMb" class="c7jymMb">施工</div> 
+          </div> 
+        </div> 
+      </div>  
+      <div style="height:10px;background-color:#ebebeb" __cid="c7jymMb" class="c7jymMb"/>  
+      <div xid="list6" __cid="c7jymMb" class="c7jymMb"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list c7jymMb" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;listData&quot;}" __cid="c7jymMb"> 
+          <div class="x-col c7jymMb" xid="col14" style="border-bottom:1px solid #eee;" __cid="c7jymMb"> 
+            <span style="border-left: 3px solid #ff0000;padding-left: 5px;margin-left: 5px;font-weight:900;font-size:16px" xid="span5" __cid="c7jymMb" class="c7jymMb">最新资讯</span>  
+            <span xid="more" style="float:right;padding-right:10px;" __cid="c7jymMb" class="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'moreClick')}">更多&gt;&gt;</span> 
+          </div>  
+          <ul class="x-list-template hide c7jymMb" xid="listTemplateUl1" style="display:inline-block;" __cid="c7jymMb" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+            <li xid="li2" dir="rtl" class="col-xs-12 c7jymMb" style="padding:0" __cid="c7jymMb" data-bind="event:{click:$model._callModelFn.bind($model, 'li2Click')}"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row c7jymMb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7jymMb"> 
+                <div class="x-col c7jymMb" xid="col12" __cid="c7jymMb"> 
+                  <span xid="span7" style="display:block;float:left;background:#eee;border-radius:10px;height:10px;width:10px;margin-top:5px;" __cid="c7jymMb" class="c7jymMb"/>  
+                  <div xid="div11" style="float:left;color:grey;margin-left:15px;" __cid="c7jymMb" class="c7jymMb" data-bind="text:val(&quot;title&quot;)"/> 
+                </div> 
+              </div> 
+            </li> 
+          </ul> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="versionMessage" style="top:118px;left:-4px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:versionMessageOK" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="c7jymMb" class="c7jymMb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7jymMb" __cid="c7jymMb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7jymMb" __cid="c7jymMb">  
+      <div class="x-modal-inner c7jymMb" __cid="c7jymMb"> 
+        <div class="x-modal-title c7jymMb" __cid="c7jymMb"/>  
+        <div class="x-modal-text c7jymMb" __cid="c7jymMb"/>  
+        <input class="x-modal-prompt-input c7jymMb" type="text" __cid="c7jymMb"/> 
+      </div>  
+      <div class="x-modal-buttons c7jymMb" __cid="c7jymMb"> 
+        <a class="x-modal-button x-modal-button-bold OK c7jymMb" value="ok" __cid="c7jymMb">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7jymMb" value="yes" __cid="c7jymMb">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7jymMb" value="no" __cid="c7jymMb">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7jymMb" value="cancel" __cid="c7jymMb">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c7jymMb" xid="procrssPopu" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;dismissible&quot;:false}" __cid="c7jymMb"> 
+    <div class="x-popOver-overlay c7jymMb" xid="div9" __cid="c7jymMb"/>  
+    <div class="x-popOver-content c7jymMb" xid="div8" style="background-color:#FFFFFF;height:200px;width:200px;" __cid="c7jymMb"> 
+      <div class="progress barStyle c7jymMb" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" data-config="{&quot;valuenow&quot;:0}" __cid="c7jymMb"> 
+        <div class="progress-bar progress-bar-success c7jymMb" role="progressbar" xid="progressBar1" __cid="c7jymMb"> 
+          <span xid="span1" __cid="c7jymMb" class="c7jymMb">0%</span> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

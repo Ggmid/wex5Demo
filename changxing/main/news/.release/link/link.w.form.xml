@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cERrQve" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cERrQve" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cERrQve" class="cERrQve"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcr2yEBf-iosstatusbar cERrQve" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cERrQve"> 
+    <div class="x-panel-top cERrQve" xid="top" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cERrQve"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cERrQve" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;科普宣传&quot;}" __cid="cERrQve"> 
+        <div class="x-titlebar-left cERrQve" xid="left1" __cid="cERrQve"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cERrQve" xid="backBtn" bind-click="backBtnClick" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cERrQve"> 
+            <i class="icon-chevron-left cERrQve" xid="i1" __cid="cERrQve"/>  
+            <span xid="span1" __cid="cERrQve" class="cERrQve"/>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cERrQve" xid="title1" __cid="cERrQve">详情</div>  
+        <div class="x-titlebar-right  cERrQve" xid="right1" __cid="cERrQve">
+          <div class="empty cERrQve" __cid="cERrQve"/>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cERrQve" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cERrQve"> 
+      <iframe src="" xid="iframe1" style="width:821px;height:627px;" __cid="cERrQve" class="cERrQve"/>
+    </div>  
+    <style __cid="cERrQve" class="cERrQve">.x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcr2yEBf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

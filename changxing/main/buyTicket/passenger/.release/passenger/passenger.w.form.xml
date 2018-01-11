@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/changxing/main/base/tpl/header.w" __id="id_1" design="device:m;" class="window window cAfeuEz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cAfeuEz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/windowDialog/windowDialog,">
+  <xhtml:style>.myMenu.cAfeuEz{position: absolute; top: 0px; right: 10px; z-index: 666} .hide.cAfeuEz{display: none} .show.cAfeuEz{display: block} .red.cAfeuEz{background: red} .blue.cAfeuEz{background: rgb(47, 164, 231)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cAfeuEz" class="cAfeuEz"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcFzUZVn-iosstatusbar cAfeuEz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cAfeuEz"> 
+    <div class="x-panel-top cAfeuEz" xid="top1" style="background:#e04e46;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAfeuEz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cAfeuEz" xid="title" bind-css="$model.color.get()?&quot;red&quot;:&quot;blue&quot;" style="background:#e04e46;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cAfeuEz"> 
+        <div class="x-titlebar-left cAfeuEz" __cid="cAfeuEz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cAfeuEz" xid="backBtn" bind-click="backBtnClick" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cAfeuEz"> 
+            <i class="icon-chevron-left cAfeuEz" __cid="cAfeuEz"/>  
+            <span __cid="cAfeuEz" class="cAfeuEz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cAfeuEz" __cid="cAfeuEz"/>  
+        <div class="x-titlebar-right  cAfeuEz" __cid="cAfeuEz">
+          <div class="empty cAfeuEz" __cid="cAfeuEz"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cAfeuEz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAfeuEz">
+      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cAfeuEz" xid="windowContainer1" xui:update-mode="merge" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/changxing/main/buyTicket/passenger/passContent.w&quot;}" __cid="cAfeuEz">
+        <div xid="window" class="window cR3eyUr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cR3eyUr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+          <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cR3eyUr" class="cR3eyUr"></div>  
+          <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7b6nqi-iosstatusbar cR3eyUr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cR3eyUr">  
+            <div class="x-panel-content cR3eyUr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR3eyUr"> 
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cR3eyUr" xid="row2" style="padding:0;border-bottom:1px solid #9A9191;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cR3eyUr"> 
+                <div class="x-col cR3eyUr" xid="col4" style="background:#D4CECF;line-height: 2;font-size: 18px;font-weight: 900;    padding-left: 20px;" __cid="cR3eyUr"> 
+                  <span xid="span1" __cid="cR3eyUr" class="cR3eyUr">乘客信息</span> 
+                </div> 
+              </div>  
+              <div xid="div1" style="line-height:3;padding-left:20px;overflow:hidden;height:50px;" __cid="cR3eyUr" class="cR3eyUr"> 
+                <input type="checkbox" value="" name="" xid="checkbox4" size="20" style="float:left;width: 24px;height:18px;margin-top:17px;" checked="true" __cid="cR3eyUr" class="cR3eyUr"/>  
+                <span xid="span3" style="margin-left:30px;margin-top:5px;float:left;" __cid="cR3eyUr" class="cR3eyUr">童文哲</span>  
+                <span xid="span4" style="float:right;margin-right:10px;margin-top:5px;font-size:16px;font-weight:900;" __cid="cR3eyUr" class="cR3eyUr">330101189812036378</span> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/row/row" class="x-row cR3eyUr" xid="row3" style="padding:0;border-bottom:1px solid #9A9191;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cR3eyUr"> 
+                <div class="x-col cR3eyUr" xid="col7" style="background:#D4CECF;line-height: 2;font-size: 18px;font-weight: 900;    padding-left: 20px;" __cid="cR3eyUr"> 
+                  <img src="@justepContextPath@/v_72ef2059490c4ad6afb1da54242fc541l_zh_CNs_d_m/changxing/main/images/addPass.png" alt="" xid="image1" style="width:30px;" __cid="cR3eyUr" class="cR3eyUr"/>  
+                  <span xid="span5" style="margin-left:5px;" __cid="cR3eyUr" class="cR3eyUr">其他乘客</span> 
+                </div> 
+              </div> 
+            </div>  
+            <style __cid="cR3eyUr" class="cR3eyUr">.x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7b6nqi-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <div xid="div11" xui:parent="panel1" xui:update-mode="insert" class="myMenu hide cAfeuEz" bind-css="$model.showMenuIcon.get()?&quot;show&quot;:&quot;hide&quot;;" __cid="cAfeuEz"> 
+      <a class="btn cAfeuEz" component="$model/UI2/system/components/justep/button/button" style="font-size: 18px;color:#FFFFFF;padding: 0;border:none;margin-top:12px;" xid="button11" bind-click="button11Click" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;完成&quot;}" __cid="cAfeuEz"> 
+        <i xid="i11" __cid="cAfeuEz" class="cAfeuEz"/>  
+        <span xid="span11" xui:update-mode="merge-and-replace" __cid="cAfeuEz" class="cAfeuEz">完成</span>
+      </a> 
+    </div>
+    <style __cid="cAfeuEz" class="cAfeuEz">.x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFzUZVn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="payfor" xui:parent="window" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cAfeuEz" class="cAfeuEz">
+    <xhtml:div class="x-dialog-overlay cAfeuEz" __cid="cAfeuEz"/>
+    <xhtml:div class="x-dialog cAfeuEz" style="display:none;" __cid="cAfeuEz">
+      <xhtml:div class="x-dialog-title cAfeuEz" __cid="cAfeuEz">
+        <xhtml:button class="close cAfeuEz" __cid="cAfeuEz">
+          <xhtml:span __cid="cAfeuEz" class="cAfeuEz">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cAfeuEz" __cid="cAfeuEz"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cAfeuEz" __cid="cAfeuEz"/>
+    </xhtml:div>
+  </span>
+</div>

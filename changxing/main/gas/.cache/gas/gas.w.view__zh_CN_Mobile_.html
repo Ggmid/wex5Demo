@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/changxing/main/base/tpl/header.w" __id="id_1" design="device:m;" class="window window cQneeQr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQneeQr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="">.myMenu.cQneeQr{position: absolute; top: 0px; right: 10px; z-index: 666} .hide.cQneeQr{display: none} .show.cQneeQr{display: block} .red.cQneeQr{background: red} .blue.cQneeQr{background: rgb(47, 164, 231)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cQneeQr" class="cQneeQr"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcN7ZVfa-iosstatusbar cQneeQr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQneeQr"> 
+    <div class="x-panel-top cQneeQr" xid="top1" style="background:#e04e46;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQneeQr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQneeQr" xid="title" style="background:#e04e46;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'},css:$model.color.get()?&quot;red&quot;:&quot;blue&quot;" __cid="cQneeQr"> 
+        <div class="x-titlebar-left cQneeQr" __cid="cQneeQr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQneeQr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'backBtnClick')}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cQneeQr"> 
+            <i class="icon-chevron-left cQneeQr" __cid="cQneeQr"/>  
+            <span __cid="cQneeQr" class="cQneeQr"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQneeQr" __cid="cQneeQr"/>  
+        <div class="x-titlebar-right  cQneeQr" __cid="cQneeQr"> 
+          <div class="empty cQneeQr" __cid="cQneeQr"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQneeQr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQneeQr"> 
+      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cQneeQr" xid="windowContainer1" xui:update-mode="merge" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/changxing/main/gas/gasMap.w&quot;}" __cid="cQneeQr"> 
+        <div component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/changxing/main/base/map/map.w" __id="id_1" design="device:m;" class="window window cEbauyi" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEbauyi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,"> 
+          <style>.show.cEbauyi{display: block} .hide.cEbauyi{display: hide} .maplibTfctr.cEbauyi{display: none !important} .anchorTL.cEbauyi{bottom: 95px !important; top: auto !important} .loading.cEbauyi{font-size: 40px; color: rgb(117, 115, 115)} .anchorBR.cEbauyi{bottom: auto; right: 20px !important; top: 80px !important} .anchorTR.cEbauyi{bottom: auto; right: 20px !important; top: 60px !important; width: 30px !important; height: 30px !important; background: url(http://api0.map.bdimg.com/images/st-control.png) -9px -2px no-repeat !important; border: 1px solid rgb(175, 175, 175)} .anchorTR.cEbauyi &gt; span.cEbauyi{display: none !important} .scroll.cEbauyi{top: 50%; width: 100%; transition-duration: 0ms}</style>  
+          <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cEbauyi" class="cEbauyi"></div>  
+          <div xid="baiduMap" style="height:100%;width:100%;position: absolute;" __cid="cEbauyi" class="cEbauyi"></div>  
+          <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="cEbauyi" class="cEbauyi">  
+            <div class="x-dialog-overlay cEbauyi" __cid="cEbauyi"/>  
+            <div class="x-dialog cEbauyi" style="display:none;" __cid="cEbauyi"> 
+              <div class="x-dialog-title cEbauyi" __cid="cEbauyi"> 
+                <button class="close cEbauyi" __cid="cEbauyi"> 
+                  <span __cid="cEbauyi" class="cEbauyi">×</span> 
+                </button>  
+                <div class="x-dialog-title-text cEbauyi" __cid="cEbauyi"/> 
+              </div>  
+              <div class="x-dialog-body cEbauyi" __cid="cEbauyi"/> 
+            </div> 
+          </span> 
+        </div> 
+      </div> 
+    </div>  
+    <div xid="div11" xui:parent="panel1" xui:update-mode="insert" class="myMenu hide cQneeQr" __cid="cQneeQr" data-bind="css:$model.showMenuIcon.get()?&quot;show&quot;:&quot;hide&quot;;"> 
+      <a class="btn btn-default btn-only-icon cQneeQr" component="$model/UI2/system/components/justep/button/button" style="font-size: 32px;color:#FFFFFF;padding: 0;background:#2fa4e7;border:none;" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'button11Click')}" data-config="{&quot;icon&quot;:&quot;linear linear-sad&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cQneeQr"> 
+        <i class="linear linear-sad cQneeQr" xid="i11" __cid="cQneeQr"/>  
+        <span xid="span11" __cid="cQneeQr" class="cQneeQr"/> 
+      </a> 
+    </div>  
+    <style __cid="cQneeQr" class="cQneeQr">.x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcN7ZVfa-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

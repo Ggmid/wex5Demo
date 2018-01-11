@@ -1,0 +1,20 @@
+.myMenu{
+	position:absolute;
+	top:0px;
+	right:10px;
+	z-index: 666;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.red{
+	
+	background:red;
+}
+.blue{
+	background:#2fa4e7;
+	
+}

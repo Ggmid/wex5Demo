@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cvqa67v" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvqa67v" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.barStyle.cvqa67v{margin: 80px 10px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cvqa67v" class="cvqa67v"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:windowDialogClose" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="cvqa67v" class="cvqa67v"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cvqa67v" __cid="cvqa67v"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cvqa67v" style="display:none;" __cid="cvqa67v">  
+      <div class="x-dialog-title cvqa67v" __cid="cvqa67v"> 
+        <button class="close cvqa67v" __cid="cvqa67v"> 
+          <span __cid="cvqa67v" class="cvqa67v">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cvqa67v" __cid="cvqa67v"/> 
+      </div>  
+      <div class="x-dialog-body cvqa67v" __cid="cvqa67v"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvu6bai-iosstatusbar cvqa67v" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cvqa67v"> 
+    <div class="x-panel-content cvqa67v" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cvqa67v"> 
+      <div class="list-group cvqa67v" xid="listItems" __cid="cvqa67v"> 
+        <div xid="top" style="width:100%;height:190px;background-image: url(@justepContextPath@/v_afe7851f105f421fb8af9fb83eb17d2al_zh_CNs_desktopd_pc/eq_servicePlat_BeiJin/main/images/top.png);background-position:center;background-size:cover;padding:50px 50px 50px 50px;" align="center" __cid="cvqa67v" class="cvqa67v"> 
+          <img src="@justepContextPath@/v_9907de42c88940ddb55bb43e2e1da7a3l_zh_CNs_desktopd_pc/eq_servicePlat_BeiJin/main/images/title.png" align="middle" style="width:100%;" __cid="cvqa67v" class="cvqa67v"/> 
+        </div>  
+        <div xid="list_login" class="list-group-item cvqa67v" __cid="cvqa67v"> 
+          <div class="input-group cvqa67v" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cvqa67v"> 
+            <span class="input-group-addon cvqa67v" xid="span3" __cid="cvqa67v">账号</span>  
+            <input type="text" class="form-control cvqa67v" component="$model/UI2/system/components/justep/input/input" xid="nameInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;用户名&quot;}" __cid="cvqa67v"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cvqa67v" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cvqa67v"> 
+            <div class="x-contents-content active cvqa67v" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cvqa67v"/> 
+          </div> 
+        </div>  
+        <div xid="list_password" class="list-group-item cvqa67v" __cid="cvqa67v"> 
+          <div class="input-group cvqa67v" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cvqa67v"> 
+            <span class="input-group-addon cvqa67v" xid="span4" __cid="cvqa67v">密码</span>  
+            <input component="$model/UI2/system/components/justep/input/password" class="form-control cvqa67v" xid="passwordInput" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;密码&quot;}" __cid="cvqa67v"/> 
+          </div> 
+        </div>  
+        <div xid="list_submit" class="list-group-item cvqa67v" __cid="cvqa67v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cvqa67v" xid="loginBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="cvqa67v"> 
+            <i xid="i1" __cid="cvqa67v" class="cvqa67v"/>  
+            <span xid="span6" __cid="cvqa67v" class="cvqa67v">登录</span> 
+          </a> 
+        </div>  
+        <div class="list-group-item cvqa67v" align="center" xid="list_memo" __cid="cvqa67v"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cvqa67v" xid="registerBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:registerBtnClick" data-config="{&quot;label&quot;:&quot;注册账号&quot;}" __cid="cvqa67v"> 
+            <i xid="i2" __cid="cvqa67v" class="cvqa67v"/>  
+            <span xid="span7" __cid="cvqa67v" class="cvqa67v">注册账号</span> 
+          </a>  
+          <i xid="i4" class="icon-ios7-information-empty cvqa67v" __cid="cvqa67v"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cvqa67v" xid="forgetBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:forgetBtnClick" data-config="{&quot;label&quot;:&quot;忘记密码&quot;}" __cid="cvqa67v"> 
+            <i xid="i3" __cid="cvqa67v" class="cvqa67v"/>  
+            <span xid="span8" __cid="cvqa67v" class="cvqa67v">忘记密码</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cvqa67v" class="cvqa67v">.x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvu6bai-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

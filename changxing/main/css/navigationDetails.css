@@ -1,0 +1,13 @@
+.mapHeight{
+	height:80% !important;
+}
+.hide{
+	display:none;
+}
+.red{
+	background-color: #d9534f !important
+}
+
+.active{
+	background:red;
+}

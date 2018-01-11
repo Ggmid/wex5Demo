@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window ceEbQnu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceEbQnu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="ceEbQnu" class="ceEbQnu"></div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="top:11px;left:36px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="ceEbQnu" class="ceEbQnu">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay ceEbQnu" __cid="ceEbQnu"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog ceEbQnu" style="display:none;" __cid="ceEbQnu">
+      <xhtml:div class="x-dialog-title ceEbQnu" __cid="ceEbQnu">
+        <xhtml:button class="close ceEbQnu" __cid="ceEbQnu">
+          <xhtml:span __cid="ceEbQnu" class="ceEbQnu">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text ceEbQnu" __cid="ceEbQnu"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body ceEbQnu" __cid="ceEbQnu"/>
+    </xhtml:div>
+  </span>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcIfeYr2-iosstatusbar ceEbQnu" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceEbQnu"> 
+    <div class="x-panel-top ceEbQnu" xid="top" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceEbQnu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ceEbQnu" xid="titleBar" style="background:#e04e46;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;科普宣传&quot;}" __cid="ceEbQnu"> 
+        <div class="x-titlebar-left ceEbQnu" xid="left1" __cid="ceEbQnu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceEbQnu" xid="backBtn" bind-click="backBtnClick" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="ceEbQnu"> 
+            <i class="icon-chevron-left ceEbQnu" xid="i1" __cid="ceEbQnu"/>  
+            <span xid="span1" __cid="ceEbQnu" class="ceEbQnu"/>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ceEbQnu" xid="title1" __cid="ceEbQnu">科普宣传</div>  
+        <div class="x-titlebar-right  ceEbQnu" xid="right1" __cid="ceEbQnu">
+          <div class="empty ceEbQnu" __cid="ceEbQnu"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content ceEbQnu" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceEbQnu"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list ceEbQnu" xid="titleList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;listData&quot;}" __cid="ceEbQnu"> 
+        <ul class="x-list-template hide ceEbQnu" xid="titleListTemplateUl" style="padding:10px" bind-foreach="{data:$model.foreach_titleList($element),afterRender:$model.foreach_afterRender_titleList.bind($model,$element)}" __cid="ceEbQnu"> 
+          <li xid="titleLi" style="line-height:1.5;padding:0 1%;border-bottom: 1px solid #f4f4f4;" __cid="ceEbQnu" class="ceEbQnu"> 
+            <h3 xid="header" bind-text="val(&quot;title&quot;)" style="text-shadow:5px 2px 6px #000;color:#686b70;text-align:center;" __cid="ceEbQnu" class="ceEbQnu">h3</h3> 
+          </li>  
+          <li style="margin-top:10px;" xid="li1" __cid="ceEbQnu" class="ceEbQnu"> 
+            <div xid="div1" style="margin-top:10px;text-align:center;" __cid="ceEbQnu" class="ceEbQnu">
+              <span xid="span5" __cid="ceEbQnu" class="ceEbQnu">发布时间：</span>
+              <span xid="time" bind-text="val(&quot;time&quot;)" __cid="ceEbQnu" class="ceEbQnu"/>
+            </div>
+            <div xid="title" bind-text="val(&quot;title&quot;)" style="font-weight: bold;margin-left:1%;text-align:center;margin-top:10px;" __cid="ceEbQnu" class="ceEbQnu"/>  
+            <div xid="contents" bind-text=" val(&quot;content&quot;)" style="text-align: center;padding:5%;text-indent:2em;" __cid="ceEbQnu" class="ceEbQnu"/>
+          </li>
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="ceEbQnu" class="ceEbQnu">.x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIfeYr2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

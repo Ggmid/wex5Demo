@@ -1,0 +1,18 @@
+.borRed{
+	border-bottom:2px solid red;
+}
+.box{
+	width: 80%;
+    background: #fff;
+    border-radius: 16px;
+    margin: 30px auto;
+    padding:10px 30px 20px 10px;
+}
+
+.pay{
+	float: right;
+    border: 1px solid orange;
+    color: orange;
+    padding: 5px 20px;
+    border-radius: 10px;
+}

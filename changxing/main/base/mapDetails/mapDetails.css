@@ -1,0 +1,29 @@
+.detailPan {
+	position:absolute;
+	bottom:0;
+	z-index:999;
+	background:white;
+	height:200px;
+	width:100%;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+
+.btn_style{
+	background:#fff;
+	color:#000;
+	border:none;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.btn_style:hover{
+	background:#fff;
+	color:#000;
+	border:none;
+}

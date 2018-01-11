@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/eq_servicePlat_BeiJin/main/base/map/map.w" __id="id_1" design="device:m;" class="window window ciAvAvm" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciAvAvm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,">  
+  <style xmlns="">.show.ciAvAvm{display: block} .hide.ciAvAvm{display: hide} .maplibTfctr.ciAvAvm{display: none !important} .anchorTL.ciAvAvm{bottom: 95px !important; top: auto !important} .anchorBR.ciAvAvm{bottom: auto; right: 20px !important; top: 42px !important} .anchorTR.ciAvAvm{bottom: auto; right: 20px !important; top: 82px !important; width: 30px !important; height: 30px !important; background: url(http://api0.map.bdimg.com/images/st-control.png) -9px -2px no-repeat !important; border: 1px solid rgb(175, 175, 175)} .anchorTR.ciAvAvm &gt; span.ciAvAvm{display: none !important} .scroll.ciAvAvm{top: 50%; width: 100%; transition-duration: 0ms} .detailPan.ciAvAvm{position: absolute; bottom: 0; z-index: 999; background: white; height: 200px; width: 100%; display: none} .show.ciAvAvm{display: block} .hide.ciAvAvm{display: none} .btn_style.ciAvAvm{background: rgb(255, 255, 255); color: rgb(0, 0, 0); border: none; position: absolute; top: 0; right: 0} .btn_style.ciAvAvm:hover{background: rgb(255, 255, 255); color: rgb(0, 0, 0); border: none} .list.ciAvAvm{position: absolute; bottom: 0; z-index: 999; background: white; height: 200px; width: 100%}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="ciAvAvm" class="ciAvAvm"/>  
+  <div xmlns="" xid="baiduMap" style="height:100%;width:100%;position: absolute;" __cid="ciAvAvm" class="ciAvAvm"/>  
+  <img xmlns="" src="@justepContextPath@/v_a159c584365b45ba843a6ea2e3cacc71l_zh_CNs_d_m/eq_servicePlat_BeiJin/main/images/line_2.png" style="position: absolute;position: absolute;z-index: 1200;bottom: 60px;right: 20px;top: auto;left: auto;width: 60px" xid="lineImg" __cid="ciAvAvm" class="ciAvAvm" data-bind="event:{click:$model._callModelFn.bind($model, 'lineClick')}"/>  
+  <img xmlns="" style="position: absolute;top: 122px;right: 20px;" xid="heatImg" xui:parent="window" xui:update-mode="insert" __cid="ciAvAvm" class="ciAvAvm" data-bind="attr:{src:$model.heatIcon.get()?require.toUrl(&quot;./images/heatCheck_ico.png&quot;):require.toUrl(&quot;./images/heat_ico.png&quot;)},event:{click:$model._callModelFn.bind($model, 'heatImgClick')}"/>  
+  <img xmlns="" style="position: absolute;top: 161px;right: 20px;" xid="trafficImg" xui:parent="window" xui:update-mode="insert" __cid="ciAvAvm" class="ciAvAvm" data-bind="attr:{src:$model.upLoadIocn.get()?require.toUrl(&quot;./images/trafficOn_ico.png&quot;):require.toUrl(&quot;./images/traffic_ico.png&quot;)},event:{click:$model._callModelFn.bind($model, 'trafficImgClick')}"/>  
+  <img xmlns="" style="height: 32px;position: absolute;z-index: 1200;bottom: 180px;right: auto;top: auto;left: 13px" xid="reportImg" xui:parent="window" xui:update-mode="insert" src="@justepContextPath@/v_0a01b7cfdf084dac8bf098b51db9844cl_zh_CNs_d_m/eq_servicePlat_BeiJin/main/images/report_ico.png" __cid="ciAvAvm" class="ciAvAvm" data-bind="event:{click:$model._callModelFn.bind($model, 'reportImgClick')}"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="ciAvAvm" class="ciAvAvm"> 
+    <div class="x-dialog-overlay ciAvAvm" __cid="ciAvAvm"/>  
+    <div class="x-dialog ciAvAvm" style="display:none;" __cid="ciAvAvm"> 
+      <div class="x-dialog-title ciAvAvm" __cid="ciAvAvm"> 
+        <button class="close ciAvAvm" __cid="ciAvAvm"> 
+          <span __cid="ciAvAvm" class="ciAvAvm">×</span> 
+        </button>  
+        <div class="x-dialog-title-text ciAvAvm" __cid="ciAvAvm"/> 
+      </div>  
+      <div class="x-dialog-body ciAvAvm" __cid="ciAvAvm"/> 
+    </div> 
+  </span>  
+  <div xmlns="" class="detailPan ciAvAvm" xid="infoDetails" xui:parent="window" xui:update-mode="insert" __cid="ciAvAvm" data-bind="visible:$model.markerDel.get()?&quot;show&quot;:&quot;hide&quot;"> 
+    <div class="x-list ciAvAvm" component="$model/UI2/system/components/justep/list/list" xid="list5_4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;markerDetils&quot;}" __cid="ciAvAvm"> 
+      <ul class="x-list-template hide ciAvAvm" xid="listTemplateUl2_4" __cid="ciAvAvm" data-bind="foreach:{data:$model.foreach_list5_4($element),afterRender:$model.foreach_afterRender_list5_4.bind($model,$element)}"> 
+        <li xid="li4_4" __cid="ciAvAvm" class="ciAvAvm"> 
+          <a class="btn btn-default btn-only-icon btn_style ciAvAvm" component="$model/UI2/system/components/justep/button/button" xid="close" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'closeClick')}" data-config="{&quot;icon&quot;:&quot;linear linear-fileadd&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciAvAvm"> 
+            <i class="linear linear-fileadd ciAvAvm" xid="i1_4" __cid="ciAvAvm"/>  
+            <span xid="span1_4" __cid="ciAvAvm" class="ciAvAvm"/> 
+          </a>  
+          <div class="x-label-edit x-label30 ciAvAvm" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="name" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciAvAvm"> 
+            <label class="x-label ciAvAvm" xid="label7_4" __cid="ciAvAvm">名称：</label>  
+            <div class="x-output x-edit ciAvAvm" component="$model/UI2/system/components/justep/output/output" xid="output4_4" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:val(&quot;lon&quot;)" __cid="ciAvAvm"/> 
+          </div>  
+          <div class="x-label-edit x-label30 ciAvAvm" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="lon" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciAvAvm"> 
+            <label class="x-label ciAvAvm" xid="label8_4" __cid="ciAvAvm">经纬度：</label>  
+            <div class="x-output x-edit ciAvAvm" component="$model/UI2/system/components/justep/output/output" xid="output5_4" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:val(&quot;lat&quot;)" __cid="ciAvAvm"/> 
+          </div>  
+          <div class="x-label-edit x-label30 ciAvAvm" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="location" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciAvAvm"> 
+            <label class="x-label ciAvAvm" xid="label9_4" __cid="ciAvAvm">位置：</label>  
+            <div class="x-output x-edit ciAvAvm" component="$model/UI2/system/components/justep/output/output" xid="output6_4" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:val(&quot;location&quot;)" __cid="ciAvAvm"/> 
+          </div> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

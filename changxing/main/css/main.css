@@ -1,0 +1,35 @@
+.maplibTfctr {
+	display: none !important
+}
+
+.anchorTL {
+	bottom: 95px !important;
+	top: auto !important
+}
+
+.anchorBR {
+	bottom: auto;
+	right: 20px !important;
+	top: 42px !important;
+}
+
+.anchorTR {
+	bottom: auto;
+	right: 20px !important;
+	top: 82px !important;
+	width: 30px !important;
+	height: 30px !important;
+	background: url(http://api0.map.bdimg.com/images/st-control.png) -9px
+		-2px no-repeat !important;
+	border: 1px solid #AFAFAF
+}
+
+.anchorTR>span {
+	display: none !important
+}
+
+.scroll {
+	top: 50%;
+	width: 100%;
+	transition-duration: 0ms
+}
